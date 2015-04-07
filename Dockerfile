@@ -52,11 +52,11 @@ COPY ./config/boto.cfg /etc/boto.cfg
 
 # Install core
 ##RUN pip install /docker-registry/depends/docker-registry-core
-RUN pip install --proxy http://10.3.0.172:8080 /docker-registry/depends/docker-registry-core
+RUN pip install  /docker-registry/depends/docker-registry-core
 
 # Install registry
 ##RUN pip  install file:///docker-registry#egg=docker-registry[bugsnag,newrelic,cors]
-RUN pip  install --proxy http://10.3.0.172:8080 file:///docker-registry#egg=docker-registry[bugsnag,newrelic,cors]
+RUN pip  install  file:///docker-registry#egg=docker-registry[bugsnag,newrelic,cors]
 
 
 
