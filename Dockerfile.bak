@@ -61,5 +61,5 @@ ENV SETTINGS_FLAVOR dev
 
 EXPOSE 5000
 
-##CMD ["docker-registry"]
-CMD ["private-docker"]
+CMD ["docker-registry"]
+##CMD ["private-docker"]
