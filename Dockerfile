@@ -22,8 +22,8 @@ RUN export https_proxy=$HTTPS_PROXY
 
 
 ## another apt-update site 
-RUN sudo rm  -rvf /var/lib/apt/lists/*
-RUN sudo sed 's@archive.ubuntu.com@ftp.kaist.ac.kr@' -i /etc/apt/sources.list
+#RUN sudo rm  -rvf /var/lib/apt/lists/*
+#RUN sudo sed 's@archive.ubuntu.com@ftp.kaist.ac.kr@' -i /etc/apt/sources.list
 
 
 
